@@ -1,0 +1,16 @@
+[submodule "Vendors/pcg-cpp"]
+	path = Vendors/pcg-cpp
+	url = https://github.com/imneme/pcg-cpp.git
+[submodule "Vendors/imgui"]
+	path = Vendors/imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking
+[submodule "Vendors/glfw"]
+	path = Vendors/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "Vendors/Ash"]
+	path = Vendors/Ash
+	url = https://github.com/PatchByte/Ash.git
+[submodule "Vendors/fmt"]
+	path = Vendors/fmt
+	url = https://github.com/fmtlib/fmt.git

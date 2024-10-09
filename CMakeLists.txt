@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.20)
+project("plygen-root")
+option(PLYGEN_ENABLE_DEVELOPMENT_ENVIRONMENT "" ON)
+
+if(PLYGEN_ENABLE_DEVELOPMENT_ENVIRONMENT)
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+endif(PLYGEN_ENABLE_DEVELOPMENT_ENVIRONMENT)
+
+add_subdirectory("Vendors")
+add_subdirectory("PlyGen")
+add_subdirectory("PlyGenGui")
